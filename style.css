@@ -183,6 +183,10 @@ article {
 
 /* Mobile-specific adjustments for smartphones */
 @media (max-width: 480px) {
+  #bgVideo {
+    height: 100%;
+  }
+
   nav {
     display: flex;
     flex-direction: row;
@@ -226,6 +230,7 @@ article {
 
   p {
     font-size: 1rem;
+    padding: 10px 0;
   }
 
   code {

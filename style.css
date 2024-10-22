@@ -194,6 +194,7 @@ article {
   ul {
     display: flex;
     flex-direction: row; /* Ensure items are side by side */
+    font-size: 12px;
     justify-content: space-between; /* Space out the nav items */
     align-items: center; /* Center vertically */
     width: 100%; /* Make sure the ul takes the full width */
@@ -208,9 +209,37 @@ article {
     margin-bottom: 0; /* Remove any margin to avoid stacking */
   }
 
+  h1 {
+    font-size: 12px;
+  }
+
+  h2 {
+    font-size: 12px;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
+
+  h4 {
+    font-size: 12px;
+  }
+
+  h5 {
+    font-size: 12px;
+  }
+
   a {
     text-decoration: none;
     color: antiquewhite;
     font-size: 12px; /* Adjust link font size for mobile */
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  code {
+    font-size: 12px;
   }
 }

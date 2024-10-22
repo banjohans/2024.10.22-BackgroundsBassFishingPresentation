@@ -186,13 +186,14 @@ article {
 @media (max-width: 768px) {
   /* Adjusting the nav and font size for tablets */
   nav {
-    flex-direction: column;
+    flex-direction: row;
     padding: 15px 10px;
   }
 
   ul {
     font-size: 24px;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
     padding-right: 0;
     align-items: flex-start; /* Align menu items to the left */
     padding-left: 10px;
@@ -201,6 +202,7 @@ article {
   li {
     font-size: 20px;
     margin-bottom: 10px; /* Add space between items in vertical layout */
+    text-align: center;
   }
 
   h1 {

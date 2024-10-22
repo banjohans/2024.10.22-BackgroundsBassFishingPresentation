@@ -15,7 +15,7 @@
   <body>
     <header>
       <nav>
-        <a href="#first"><h5>Bass Fishing</h5></a>
+        <h5><a href="#first">Bass Fishing</a></h5>
         <ul>
           <a href="#first"> <li>First</li></a>
           <a href="#second"><li>Second</li></a>
@@ -83,7 +83,7 @@
       </section>
 
       <section class="bg-img" id="third">
-        <h1>You might sit around for days before they bite</h1>
+        <h1>You might sit around for days hoping they'll bite</h1>
       </section>
       <section class="information">
         <h3>Understanding Bass Behavior for Better Results</h3>
@@ -170,26 +170,5 @@
         </article>
       </section>
     </main>
-    <script>
-      // Function to add the 'animate' class when the element comes into view
-      document.addEventListener("DOMContentLoaded", function () {
-        const h1Elements = document.querySelectorAll("h1");
-
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add("animate");
-              }
-            });
-          },
-          { threshold: 0.5 } // Adjust this to determine when to trigger (0.5 means halfway visible)
-        );
-
-        h1Elements.forEach((h1) => {
-          observer.observe(h1);
-        });
-      });
-    </script>
   </body>
 </html>

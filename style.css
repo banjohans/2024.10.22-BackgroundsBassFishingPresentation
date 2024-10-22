@@ -59,18 +59,6 @@ section {
   padding: 20px;
 }
 
-/* Add a keyframe animation for the movement */
-@keyframes slide-in {
-  0% {
-    transform: translateX(-100%); /* Start completely off-screen on the left */
-    opacity: 0; /* Initially hidden */
-  }
-  100% {
-    transform: translateX(0); /* Ends at its normal position */
-    opacity: 1; /* Fully visible */
-  }
-}
-
 h1 {
   font-size: 60px;
   padding: 20px 40px;
@@ -79,9 +67,6 @@ h1 {
   border-radius: 10px;
   letter-spacing: 0.6px;
   width: 100%;
-  opacity: 0; /* Start hidden */
-  transform: translateX(-100%); /* Start off-screen on the left */
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Animate opacity and position */
 }
 
 /* Class to trigger the animation */
@@ -166,4 +151,8 @@ article {
 #fifth {
   background-image: url(./assets/fishing5.jpg);
   background-size: cover;
+}
+
+.paragraph-container {
+  padding: 20px 20px 20px 20px;
 }

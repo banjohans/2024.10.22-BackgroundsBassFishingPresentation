@@ -242,7 +242,8 @@ article {
   }
 
   .bg-img {
-    background-size: cover; /* Ensure the whole image is visible */
+    background-size: contain; /* Ensure the whole image is visible */
     background-position: center; /* Center the image */
+    background-attachment: scroll;
   }
 }

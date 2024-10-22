@@ -180,3 +180,97 @@ article {
 .paragraph-container {
   padding: 20px 20px 20px 20px;
 }
+
+/* General styles for desktop remain unchanged */
+
+@media (max-width: 768px) {
+  /* Adjusting the nav and font size for tablets */
+  nav {
+    flex-direction: column;
+    padding: 15px 10px;
+  }
+
+  ul {
+    font-size: 24px;
+    flex-direction: column;
+    padding-right: 0;
+    align-items: flex-start; /* Align menu items to the left */
+    padding-left: 10px;
+  }
+
+  li {
+    font-size: 20px;
+    margin-bottom: 10px; /* Add space between items in vertical layout */
+  }
+
+  h1 {
+    font-size: 40px;
+    padding: 15px 20px; /* Smaller padding for smaller screens */
+  }
+
+  h3 {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+
+  h5 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 18px; /* Smaller paragraph text */
+  }
+
+  article {
+    width: 90%; /* Adjust article width to fit smaller screens */
+  }
+
+  section {
+    padding: 10px; /* Adjust padding for smaller devices */
+  }
+
+  .paragraph-container {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Additional adjustments for smartphones */
+  h1 {
+    font-size: 30px; /* Reduce font size for smaller screens */
+    padding: 10px 15px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  h5 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 16px; /* Smaller font size for readability */
+  }
+
+  ul {
+    font-size: 18px; /* Reduce font size for the menu */
+  }
+
+  li {
+    font-size: 16px;
+    margin-bottom: 5px; /* Less space between list items */
+  }
+
+  nav {
+    font-size: 18px;
+  }
+
+  article {
+    width: 95%; /* Maximize article width on small screens */
+  }
+
+  section {
+    padding: 5px; /* Reduce padding for smaller screens */
+  }
+}

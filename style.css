@@ -182,7 +182,7 @@ article {
 }
 
 /* Mobile-specific adjustments for smartphones */
-@media (max-width: 480px) {
+@media (max-width: 800px) {
   #bgVideo {
     height: 100%;
   }

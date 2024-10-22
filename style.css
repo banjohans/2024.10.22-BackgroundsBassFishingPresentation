@@ -248,6 +248,5 @@ article {
   #fifth {
     background-size: contain; /* Ensure the whole image is visible */
     background-position: center; /* Center the image */
-    background-attachment: scroll; /* Prevent fixed attachment on mobile */
   }
 }

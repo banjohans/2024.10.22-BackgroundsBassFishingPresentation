@@ -234,4 +234,13 @@ article {
   article {
     width: 90%;
   }
+
+  #first,
+  #second,
+  #third,
+  #fourth,
+  #fifth {
+    background-size: contain;
+    background-position: center;
+  }
 }

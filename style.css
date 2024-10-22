@@ -232,7 +232,8 @@ article {
     font-size: 1rem;
   }
   article {
-    width: 90%;
+    width: 95%;
+    padding: 10px;
   }
 
   #first,
@@ -240,7 +241,8 @@ article {
   #third,
   #fourth,
   #fifth {
-    background-size: contain;
-    background-position: center;
+    background-size: contain; /* Ensure the whole image is visible */
+    background-position: center; /* Center the image */
+    background-attachment: scroll; /* Prevent fixed attachment on mobile */
   }
 }

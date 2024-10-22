@@ -231,4 +231,7 @@ article {
   code {
     font-size: 1rem;
   }
+  article {
+    width: 90%;
+  }
 }

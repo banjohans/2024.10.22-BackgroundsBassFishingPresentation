@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Backgrounds</title>
+    <title>Bass Fishing & Backgrounds</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,7 +15,7 @@
   <body>
     <header>
       <nav>
-        <h5>Bass Fishing</h5>
+        <a href="#first"><h5>Bass Fishing</h5></a>
         <ul>
           <a href="#first"> <li>First</li></a>
           <a href="#second"><li>Second</li></a>
@@ -27,7 +27,7 @@
     </header>
     <main>
       <section class="bg-img" id="first">
-        <h1>In a world of fishing</h1>
+        <h1>Let's talk about Bass fishing</h1>
       </section>
       <section class="information">
         <h3>Why is Bass Fishing So Popular?</h3>
@@ -53,7 +53,7 @@
       </section>
 
       <section class="bg-img" id="second">
-        <h1>The bass is one of the most popular fish</h1>
+        <h1>A common, but mighty, fish</h1>
       </section>
       <section class="information">
         <h3>Effective Techniques for Catching Bass</h3>
@@ -83,7 +83,7 @@
       </section>
 
       <section class="bg-img" id="third">
-        <h1>Some fishermen sit around for days to catch them</h1>
+        <h1>You might sit around for days before they bite</h1>
       </section>
       <section class="information">
         <h3>Understanding Bass Behavior for Better Results</h3>
@@ -112,7 +112,7 @@
       </section>
 
       <section class="bg-img" id="fourth">
-        <h1>Others go through great lengths to find them</h1>
+        <h1>Some times, no matter what you do, they won't be found</h1>
       </section>
       <section class="information">
         <h3>Conservation Efforts in Bass Fishing</h3>
@@ -140,10 +140,7 @@
       </section>
 
       <section class="bg-img" id="fifth">
-        <h1>
-          "The charm of fishing is that it is the pursuit of what is elusive but
-          attainable, a perpetual series of occasions for hope." – John Buchan
-        </h1>
+        <h1>"Patience and persistence hook the biggest catch."</h1>
       </section>
       <section class="information">
         <h3>Credits</h3>
@@ -173,5 +170,26 @@
         </article>
       </section>
     </main>
+    <script>
+      // Function to add the 'animate' class when the element comes into view
+      document.addEventListener("DOMContentLoaded", function () {
+        const h1Elements = document.querySelectorAll("h1");
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("animate");
+              }
+            });
+          },
+          { threshold: 0.5 } // Adjust this to determine when to trigger (0.5 means halfway visible)
+        );
+
+        h1Elements.forEach((h1) => {
+          observer.observe(h1);
+        });
+      });
+    </script>
   </body>
 </html>

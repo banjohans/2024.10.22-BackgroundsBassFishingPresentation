@@ -23,7 +23,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #cdcdcd;
+  color: antiquewhite;
 }
 
 a:hover {
@@ -47,7 +47,7 @@ ul {
   display: flex;
   list-style: none;
   column-gap: 20px;
-  color: aliceblue;
+  color: antiquewhite;
 }
 
 section {
@@ -59,12 +59,34 @@ section {
   padding: 20px;
 }
 
+/* Add a keyframe animation for the movement */
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%); /* Start completely off-screen on the left */
+    opacity: 0; /* Initially hidden */
+  }
+  100% {
+    transform: translateX(0); /* Ends at its normal position */
+    opacity: 1; /* Fully visible */
+  }
+}
+
 h1 {
+  font-size: 60px;
   padding: 20px 40px;
   background-color: hsla(240, 96%, 9%, 65%);
   color: antiquewhite;
   border-radius: 10px;
   letter-spacing: 0.6px;
+  width: 100%;
+  opacity: 0; /* Start hidden */
+  transform: translateX(-100%); /* Start off-screen on the left */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Animate opacity and position */
+}
+
+/* Class to trigger the animation */
+h1.animate {
+  animation: slide-in 1s forwards; /* Triggers the animation once */
 }
 
 h3 {
@@ -98,6 +120,7 @@ article {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 60%;
 }
 
 .information {
@@ -114,27 +137,33 @@ article {
   min-height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
+  background-attachment: fixed;
   display: grid;
   place-items: center;
 }
 
 #first {
   background-image: url(./assets/fishing1.jpg);
+  background-size: cover;
 }
 
 #second {
   background-image: url(./assets/fishing2.jpg);
+  background-size: cover;
 }
 
 #third {
   background-image: url(./assets/fishing3.jpg);
+  background-size: cover;
 }
 
 #fourth {
   background-image: url(./assets/fishing4.jpg);
+  background-size: cover;
 }
 
 #fifth {
   background-image: url(./assets/fishing5.jpg);
+  background-size: cover;
 }

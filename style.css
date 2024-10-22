@@ -237,33 +237,33 @@ article {
 @media (max-width: 480px) {
   /* Additional adjustments for smartphones */
   h1 {
-    font-size: 30px; /* Reduce font size for smaller screens */
+    font-size: 16px; /* Reduce font size for smaller screens */
     padding: 10px 15px;
   }
 
   h3 {
-    font-size: 30px;
+    font-size: 16px;
   }
 
   h5 {
-    font-size: 30px;
+    font-size: 16px;
   }
 
   p {
-    font-size: 16px; /* Smaller font size for readability */
+    font-size: 12px; /* Smaller font size for readability */
   }
 
   ul {
-    font-size: 18px; /* Reduce font size for the menu */
+    font-size: 12px; /* Reduce font size for the menu */
   }
 
   li {
-    font-size: 16px;
+    font-size: 12px;
     margin-bottom: 5px; /* Less space between list items */
   }
 
   nav {
-    font-size: 18px;
+    font-size: 12px;
   }
 
   article {
